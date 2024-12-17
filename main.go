@@ -35,7 +35,7 @@ func main() {
 	readmePath := filepath.Join(folderName, "README.md")
 
 	// Define the content for the README.md file
-	readmeContent := fmt.Sprintf("## %s\n\nChi tiết bài toán xem [tại đây](%s)\n\n### Mục Tiêu\n\n\n### Ý Tưởng\n", title, link)
+	readmeContent := fmt.Sprintf("## %s\n\nChi tiết bài toán xem [tại đây](%s)\n\n### Bài Toán\n\n\n### Yêu Cầu\n\n\n### Phân Tích\n", title, link)
 
 	// Create and write to the README.md file
 	err = writeFile(readmePath, readmeContent)
